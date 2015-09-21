@@ -23,6 +23,7 @@ h1 {
 
 h2 {
 	background-color: rgba(0,0,0,0.2);
+	margin:0;
 }
 
 img {
@@ -53,6 +54,14 @@ ul {
 	list-style-image: url(../images/kunai.png);
 }
 
+.exp:hover,
+.qual:hover,
+.skills:hover,
+.hobbies:hover {
+	background: rgba(241,150,65,0.6);
+	transition: all 1s ease-in-out;
+}
+
 /*.kunai {
 	height: 20px;
 	width: 20px;
@@ -63,6 +72,15 @@ ul {
 }
 */
 footer {
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: orange;
+	transition: all 1s ease-in-out;
 }
 
 /*Screensize adaptable CSS
@@ -85,17 +103,47 @@ footer {
 	flex-direction: column;
 }
 
-/*Media Queries CSS
+.items2 {
+	display: flex;
+	flex-direction: column;
+}
+
+/*Sprites Social channels
 ------------------------------------*/
 
-@media screen and (min-width: 960px){
-	
-	.items {
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-	}
-	
+.social_channels{
+	list-style: none;
+	padding: 0;
+}
+
+.social_channels li{
+	margin-right: .5em;
+	border-radius: 3px;
+	float: right;
+}
+
+.social_channels li a {
+	display:block;
+}
+
+.facebook a {
+	width: 33px;
+	height: 33px;
+	background: url(../assets/images/sprite_bar.png);
+}
+
+.twitter a {
+	width: 33px;
+	height: 33px;
+	background: url(../assets/images/sprite_bar.png);
+	background-position: -33px 0;
+}
+
+.linkedin a {
+	width: 33px;
+	height: 33px;
+	background: url(../assets/images/sprite_bar.png);
+	background-position: -66px 0;
 }
 
 
@@ -109,6 +157,27 @@ footer {
 	clear:both;
 	visibility:hidden;
 }
+
+/*Media Queries CSS
+------------------------------------*/
+
+@media screen and (min-width: 960px){
+	
+	.items {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	} /*Media Query to Flex header items into rows when screen size is larger than 960px*/
+	.skills,
+	.hobbies {
+		width: 50%;
+
+	}
+	.items2 {
+		flex-direction: row;
+	} /*Media Query to flex skills and hobbies into side by side columns if screen is larger than 960px*/
+	
+} 
 
 @media print{
 
@@ -186,9 +255,7 @@ footer {
 
 	h1 {
 	    font-size: 32pt;
-	    line-height: 36pt;
 	    font-weight: normal;
-	    margin: 16pt 0;
 	}
 
 	h2 {
