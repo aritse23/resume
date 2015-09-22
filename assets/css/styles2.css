@@ -8,7 +8,7 @@ body {
 
 
 .wrapper{
-	background: rgba(255,255,255,0.2);
+	background: rgba(255,255,255,0.3);
 }
 
 h1 {
@@ -83,6 +83,21 @@ a:hover {
 	transition: all 1s ease-in-out;
 }
 
+/*make icons bounce
+-----------------------------------*/
+.social_channels li:hover {
+	margin-top: -6px;
+}
+
+a,
+.fade,
+input,
+textarea { 
+	-webkit-transition: all .2s linear; 
+	-o-transition: all .2s linear; 
+	-moz-transition: all .2s linear; 
+	transition: all .2s linear; 
+}
 /*Screensize adaptable CSS
 ------------------------------------*/
 .wrapper,
@@ -93,6 +108,8 @@ footer {
 	width:88%;
 	max-width: 960px;
 }
+
+
 
 /*Flexbox CSS
 ------------------------------------*/
@@ -112,6 +129,7 @@ footer {
 ------------------------------------*/
 
 .social_channels{
+	display: block;
 	list-style: none;
 	padding: 0;
 }
@@ -129,20 +147,20 @@ footer {
 .facebook a {
 	width: 33px;
 	height: 33px;
-	background: url(../assets/images/sprite_bar.png);
+	background: url(../images/sprite_bar.png);
 }
 
 .twitter a {
 	width: 33px;
 	height: 33px;
-	background: url(../assets/images/sprite_bar.png);
+	background: url(../images/sprite_bar.png);
 	background-position: -33px 0;
 }
 
 .linkedin a {
 	width: 33px;
 	height: 33px;
-	background: url(../assets/images/sprite_bar.png);
+	background: url(../images/sprite_bar.png);
 	background-position: -66px 0;
 }
 
@@ -264,7 +282,7 @@ footer {
 	    page-break-after: avoid;
 	    orphans: 2;
 	    widows: 2;
-	    margin: 14pt 0;
+	    margin: 9pt 0;
 	}
 
 	h3 {
