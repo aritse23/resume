@@ -379,7 +379,7 @@ footer {
 
 	blockquote {
 	    font-size: 16pt;
-	    border-left: 3pt solid black;
+	    font-family: "Helvetica Neue", sans-serif;
 	    padding: 0 0 0 8pt;
 	    page-break-inside: avoid; /* 1 */
 	}
