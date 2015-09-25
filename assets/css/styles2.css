@@ -11,6 +11,8 @@ body {
 	background: rgba(255,255,255,0.3);
 }
 
+
+
 h1 {
 	font-size: 120px;
 	margin: 0;
@@ -59,7 +61,9 @@ ul {
 .skills:hover,
 .hobbies:hover {
 	background: rgba(241,150,65,0.6);
-	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;;
+	-o-transition: all 1s ease-in-out;;
+	transition: all 1s ease-in-out;;
 }
 
 /*.kunai {
@@ -76,6 +80,10 @@ footer {
 a {
 	text-decoration: none;
 	color: white;
+}
+
+.foot {
+	text-align: left;
 }
 
 a:hover {
@@ -188,6 +196,7 @@ footer {
 	} /*Media Query to Flex header items into rows when screen size is larger than 960px*/
 	.skills,
 	.hobbies {
+		display: inline-block;
 		width: 50%;
 
 	}
