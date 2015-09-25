@@ -76,7 +76,10 @@ ul {
   	background-repeat: repeat-x;  
 }*/
 
-.wave:hover {
+.exp:hover,
+.qual:hover,
+.skills:hover,
+.hobbies:hover {
 	/*background-position: 100% 100%;
 
   	transition: background-position 2s ease;*/
