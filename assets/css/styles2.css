@@ -8,6 +8,7 @@ body {
 
 
 .wrapper{
+	padding-top: 1em;
 	background: rgba(255,255,255,0.3);
 }
 
@@ -26,6 +27,16 @@ h1 {
 h2 {
 	background-color: rgba(0,0,0,0.2);
 	margin:0;
+}
+
+.about_me {
+	background: rgba(255, 255, 255, 0.3);
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 img {
@@ -55,15 +66,27 @@ th {
 ul {
 	list-style-image: url(../images/kunai.png);
 }
+/*.exp,
+.qual,
+.skills,
+.hobbies
+{
+	background-image: url(../images/orange_wave.png);
+	background-position: 0 -200%;
+  	background-repeat: repeat-x;  
+}*/
 
 .exp:hover,
 .qual:hover,
 .skills:hover,
 .hobbies:hover {
+	/*background-position: 100% 100%;
+
+  	transition: background-position 2s ease;*/
 	background: rgba(241,150,65,0.6);
-	-webkit-transition: all 1s ease-in-out;;
-	-o-transition: all 1s ease-in-out;;
-	transition: all 1s ease-in-out;;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 /*.kunai {
@@ -125,11 +148,19 @@ footer {
 
 .items {
 	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
 	flex-direction: column;
 }
 
 .items2 {
 	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
 	flex-direction: column;
 }
 
