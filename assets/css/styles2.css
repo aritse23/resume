@@ -66,38 +66,21 @@ th {
 ul {
 	list-style-image: url(../images/kunai.png);
 }
-/*.exp,
-.qual,
-.skills,
-.hobbies
-{
-	background-image: url(../images/orange_wave.png);
-	background-position: 0 -200%;
-  	background-repeat: repeat-x;  
-}*/
 
+/*color fade to orange when hovering
+---------------------------------------*/
 .exp:hover,
 .qual:hover,
 .skills:hover,
 .hobbies:hover {
-	/*background-position: 100% 100%;
-
-  	transition: background-position 2s ease;*/
+	
 	background: rgba(241,150,65,0.6);
 	-webkit-transition: all 1s ease-in-out;
 	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 
-/*.kunai {
-	height: 20px;
-	width: 20px;
-	background: url(../images/kunai.png);
-	display: inline-block;
-	margin-right: 10px;
 
-}
-*/
 footer {
 }
 a {
@@ -301,11 +284,11 @@ footer {
 	 *  Show long-form for abbreviations in print.
 	 */
 
-	abbr[title] {
+	/*abbr[title] {
 	    &:after {
 	        content: " (" attr(title) ")";
 	    }
-	}
+	}*/
 
 	/**
 	 *  Harmonise size, style and vertical margin of headings.
